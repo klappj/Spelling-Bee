@@ -12,6 +12,7 @@ mustletter <- "t"
 otherletters <- c("a","n","d","i","o","x")
 outletters <- setdiff( allletters, c(mustletter, otherletters))
 
+#narrow down to words that have the required letter
 has_must <- wordlist[sapply(wordlist, function(ch) grepl (mustletter, ch))]
 
 for (letter in outletters)
